@@ -1,0 +1,873 @@
+.box_main {
+    width: 1300px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+/* -------------------------XỬ LÝ BOX BÊN TRÁI----------------------- */
+.box_left {
+    width: 740px;
+    height: 100%;
+    margin-right: 40px;
+}
+
+.box_left img {
+    width: 100%;
+    height: 470px;
+}
+
+.total_image {
+    text-align: center;
+}
+
+.box_image {
+    width: 100%;
+    height: 90px;
+}
+
+.chinh_sach_bao_hanh {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #e0e0e0;
+    margin-top: 20px;
+}
+
+/* ---------------------------SAN PHAM DI KEM---------------------------- */
+.tieu_de_san_pham_lien_quan {
+    width: 100%;
+    height: 400px;
+    border: 1px solid #e0e0e0;
+}
+
+.san_pham_lien_quan {
+    width: 50%;
+    height: 300px;
+}
+.container_san_pham_lien_quan {
+    display: flex;
+    margin: 40px 0px;
+}
+.noi_dung_san_pham {
+    margin-left: 10px;
+}
+.noi_dung_san_pham img {
+    width: 125px;
+    height: 125px;
+    margin-top: 10px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.noi_dung_san_pham:hover>img {
+    transform: translateY(-10px);
+}
+
+.item_text li {
+    margin-left: 10px;
+    text-align: center;
+}
+
+.noi_dung li:first-child {
+    height: 30px;
+    width: 85%;
+    background-color: #DE1C05;
+    margin-bottom: 10px;
+    align-items: center;
+    line-height: 30px;
+    border-radius: 40px;
+}
+
+.noi_dung li:first-child img {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    float: left;
+    border-radius: 100%;
+    top: -33%;
+    margin-right: 5px;
+}
+
+.noi_dung li:first-child p {
+    color: #fff;
+    font-size: 12px;
+}
+
+.noi_dung li:last-child i {
+    color: #F97E0E;
+    font-size: 13px;
+}
+/* --------------------------------END------------------------- */
+/* --------------------------------DANH GIA SAN PHAM------------ */
+.review-section {
+    width: 100%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 15px;
+    
+}
+
+h2 {
+
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+.overall-rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.rating-number {
+    font-size: 36px;
+    color: #ff9f00;
+}
+
+.stars i {
+    color: #FFD700;
+}
+
+.total-reviews {
+    font-size: 18px;
+}
+
+.rating-distribution {
+    margin-bottom: 20px;
+}
+
+.rating-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.bar {
+    flex-grow: 1;
+    background-color: #f0f0f0;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.bar .filled {
+    height: 100%;
+    background-color: #FFD700;
+}
+
+.user-reviews {
+    margin-bottom: 20px;
+}
+
+.review {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 20px;
+}
+
+.user-info {
+    text-align: center;
+    width: 100px;
+}
+
+.user-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.verified {
+    color: #4CAF50;
+    font-size: 12px;
+}
+
+.user-review {
+    flex-grow: 1;
+}
+
+.user-review .stars i {
+    color: #FFD700;
+}
+
+.user-review p {
+    margin: 10px 0;
+}
+
+.review-images {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.review-images img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.review-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #777;
+}
+
+.review-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.review-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #DE1C05;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.review-buttons .write-review {
+    background-color: #007BFF;
+}
+
+/* --------------------------------END--------------------------- */
+/* --------------------------------THONG TIN SAN PHAM------------ */
+.product-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.thumbnails {
+    display: flex;
+    gap: 10px;
+}
+
+.thumbnails img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.thumbnails img:hover {
+    transform: scale(1.1);
+}
+
+/* --------------------------------END--------------------------- */
+.btn_xem_them {
+    width: 300px;
+    height: 40px;
+    border: 1px solid #0c9fe8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 3px;
+}
+/* --------------------XU LY TEXT----------------- */
+.noi_dung li:nth-child(2) a {
+    font-size: 12px;
+    color: #030303;
+}
+
+.noi_dung li:nth-child(3) a {
+    color: #e12363;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.noi_dung li:nth-child(4) a {
+    font-size: 14px;
+    color: #403e3e;
+}
+
+.noi_dung li:nth-child(4) span {
+    color: #EB5757;
+    margin-left: 10px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #FFF0E9;
+    border-radius: 5px;
+}
+.btn_xem_them a {
+    color: #0c9fe8;
+}
+
+/* --------------------------XỬ LÝ BOX BÊN PHẢI----------------------- */
+.box_right {
+    width: 520px;
+    height: auto;
+}
+
+.dung_luong {
+    width: 100%;
+    height: 30px;
+}
+
+.dung_luong a {
+    border: 1px solid #e0e0e0;
+    padding: 6px 10px;
+    text-align: center;
+    color: #030303;
+}
+
+.mau_sac {
+    width: 100%;
+    height: 30px;
+    margin-top: 15px;
+}
+
+.mau_sac a {
+    border: 1px solid #e0e0e0;
+    padding: 6px 10px;
+    text-align: center;
+    color: #030303;
+}
+
+.gia_san_pham {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.gia_san_pham p {
+    margin: 0 5px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.gia_san_pham span {
+    background-color: rgb(214, 210, 210);
+    padding: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------------------------KHUYEN MAI--------------------------- */
+.khuyen_mai {
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(214, 210, 210);
+    margin: 10px 0px;
+}
+
+.top_khuyen_mai {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(214, 210, 210);
+    font-size: 14px;
+}
+
+.bottom_khuyen_mai {
+    display: flex;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 5px;
+    padding: 5px 0px;
+}
+
+.bottom_khuyen_mai p {
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-size: 15px;
+    color: #0c9fe8;
+    font-weight: bold;
+}
+
+.bottom_khuyen_mai span {
+    font-size: 14px;
+}
+
+/* ----------------------------MUA NGAY--------------------------------- */
+.btn_mua_ngay {
+    width: 100%;
+    height: 50px;
+}
+
+.btn_mua_ngay button {
+    width: 100%;
+    height: 100%;
+    background-color: #FB6E2E;
+    color: #fff;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+/* -----------------------MUA TRA GOP-------------------------- */
+.btn_mua_tra_gop {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0px;
+    display: flex;
+    text-align: center;
+}
+
+.btn_mua_tra_gop a {
+    color: #fff;
+}
+
+.btn_left {
+    width: 48%;
+    height: 100%;
+    margin-right: 4%;
+    border-radius: 5px;
+    background-color: #2F80ED;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn_right {
+    width: 48%;
+    height: 100%;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: #2F80ED;
+    color: #fff;
+    cursor: pointer;
+}
+
+.goi_mua_hang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.goi_mua_hang a {
+    color: #0c9fe8;
+}
+
+/* --------------------UU DAI MUA SAM-------------------- */
+.container_uu_dai {
+    width: 100%;
+    height: auto;
+    margin: 10px 0px;
+}
+
+.container_uu_dai h3 {
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 20px;
+}
+
+hr {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
+
+.mua_sam_uu_dai {
+    width: 100%;
+    height: auto;
+    border: 1px solid;
+    display: flex;
+}
+
+.mua_sam_uu_dai img {
+    width: 110px;
+    height: 100px;
+    margin: 10px 20px;
+}
+
+.content_mua_sam_uu_dai {
+    display: inline-block;
+    font-size: 14px;
+    color: #333333;
+    margin: 10px 10px;
+}
+
+.san_pham_mua_sam {
+    width: 100%;
+    height: auto;
+    border: 1px solid;
+    display: flex;
+}
+
+.san_pham_mua_sam img {
+    width: 110px;
+    height: 100px;
+    margin: 10px 20px;
+}
+
+.content_top {
+    display: flex;
+    font-size: 14px;
+    color: #333333;
+    margin: 10px 10px;
+}
+
+.content_top input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.content_bottom {
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+    font-size: 15px;
+}
+
+/* --------------------UU DAI MUA SAM-------------------- */
+.container_uu_dai {
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+}
+
+.container_uu_dai h3 {
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 20px;
+}
+
+hr {
+    width: 80%;
+    margin: 0 auto 10px;
+}
+
+.san_pham_mua_sam,
+.mua_sam_uu_dai {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    margin: 0px 0;
+}
+
+.san_pham_mua_sam img,
+.mua_sam_uu_dai img {
+    width: 110px;
+    height: 100px;
+    margin: 10px 20px 10px 10px;
+    /* Adjust margin to align image correctly */
+}
+
+.san_pham_di_kem {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Ensure content starts from the top */
+}
+
+.content_top,
+.content_bottom {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.content_top {
+    margin-top: 10px;
+    /* Ensure there's a small margin at the top */
+}
+
+.content_top p,
+.content_bottom p {
+    margin: 0;
+}
+
+.content_top input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.price {
+    color: #D0021C;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.discount-label {
+    position: absolute;
+    top: 65%;
+    left: 21px;
+    background-color: rgba(208, 2, 28, 0.8);
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 10;
+    font-size: 14px;
+}
+
+.mua_theo_combo {
+    background-color: #D0021C;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    margin: 5px 0px;
+}
+
+/* ------------------------------CAU HINH SAN PHAM------------------------------- */
+.cau_hinh_san_pham {
+    width: 100%;
+    padding-top: 5px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cau_hinh_san_pham h3 {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.container_cau_hinh_san_pham {
+    padding: 10px;
+}
+
+.content_cau_hinh_san_pham ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 10px;
+}
+.content_cau_hinh_san_pham li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+.content_cau_hinh_san_pham p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+    flex-shrink: 0;
+    width: 200px;
+    /* Fixed width to align span elements */
+}
+
+.content_cau_hinh_san_pham span {
+    color: #333;
+    flex-grow: 1;
+    text-align: left;
+    font-size: 15px;
+    margin-left: 10px;
+    /* Add some space between p and span */
+}
+
+/* ------------------------THIET KE XEM THEM SAN PHAM--------------- */
+/* style.css */
+.container_khuyen_mai {
+    width: 100%;
+}
+
+.khuyen_mai {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.top_khuyen_mai {
+    margin-bottom: 10px;
+}
+
+.bottom_khuyen_mai {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.bottom_khuyen_mai p {
+    margin: 0;
+    font-weight: bold;
+    color: #555;
+    flex-shrink: 0;
+    width: 30px;
+}
+
+.bottom_khuyen_mai span {
+    color: #333;
+    flex-grow: 1;
+    text-align: left;
+    margin-left: 10px;
+}
+
+/* --------------------------SAN PHAM THUONG MUA CUNG-------------------------- */
+.container_items {
+    padding: 10px;
+    width: 1300px;
+    margin: 0px auto;
+    border-bottom-left-radius: 10px;
+    background-color: #fff;
+    border-bottom-right-radius: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+.main_products {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 10px 10px;
+}
+
+.item_content {
+    width: 19%;
+    background-color: #fff;
+    padding: 5px 10px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #e0e0e0;
+}
+
+.item_content>img {
+    width: 100%;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+/* ----------------HOVER------------------------ */
+.item_content:hover>img {
+    transform: translateY(-20px);
+}
+
+h3 {
+    color: #333333;
+    font-size: 14px;
+}
+
+.item_text li:hover h3 {
+    color: #64ABE1;
+}
+
+.item_text {
+    padding-top: 20px;
+}
+
+.item_text li {
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.item_text li:first-child {
+    height: 30px;
+    width: 70%;
+    background-color: #DE1C05;
+    margin-bottom: 20px;
+    align-items: center;
+    line-height: 30px;
+    border-radius: 40px;
+    margin-right: -10px;
+}
+
+.item_text li:first-child img {
+    width: 30px;
+    float: left;
+    border-radius: 100%;
+}
+
+.item_text li:first-child p {
+    color: #fff;
+    font-size: 12px;
+}
+
+.item_text li:last-child i {
+    color: #F97E0E;
+    font-size: 15px;
+}
+
+/* --------------------XU LY TEXT----------------- */
+.item_text li:nth-child(3) a {
+    font-size: 12px;
+    color: #030303;
+}
+
+.item_text li:nth-child(4) a {
+    color: #DE1C05;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.item_text li:nth-child(5) a {
+    font-size: 14px;
+    color: #807d7d;
+}
+
+.item_text li:nth-child(5) span {
+    color: #EB5757;
+    margin-left: 10px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #FFF0E9;
+    border-radius: 5px;
+}
+
+/* TEST */
+.banner {
+    position: relative;
+}
+
+.main_content {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* ----------------------CHINH SACH BAO HANH------------------------- */
+.chinh_sach_bao_hanh {
+    font-size: 14px;
+}
+
+.chinh_sach_bao_hanh ul li {
+    margin: 20px 40px;
+    padding: 5px;
+    width: 40%;
+}
+
+.chinh_sach_bao_hanh_top ul {
+    display: flex;
+}

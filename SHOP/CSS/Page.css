@@ -1,0 +1,50 @@
+To add a red color for the current page in your pagination, you can modify the CSS for the `.active` class to use a red background and text color. Here's how you can do it:
+
+### CSS
+
+Add or update the following CSS in your `pagination.css` or `Page.css` file:
+
+```css
+/* Pagination Container */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* Pagination Links */
+.pagination a, .pagination span {
+    margin: 0 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #007bff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Current Page */
+.pagination .active {
+    background-color: #ff0000; /* Red background for current page */
+    color: #fff; /* White text color */
+    border: 1px solid #ff0000; /* Red border */
+}
+
+/* Hover Effect */
+.pagination a:hover, .pagination a:focus {
+    background-color: #0056b3;
+    color: #fff;
+    border-color: #0056b3;
+}
+
+/* Disabled Page Links */
+.pagination .disabled {
+    color: #6c757d;
+    pointer-events: none;
+    border: 1px solid #dee2e6;
+}
+
+.current-page {
+    color: red;
+}

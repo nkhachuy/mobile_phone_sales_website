@@ -1,0 +1,101 @@
+/* Style for the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for the user-dropdown link */
+.user-dropdown {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.user-dropdown:hover {
+    background-color: #f8f8f8;
+    color: #007bff;
+}
+
+/* Style for the user name span */
+.user-name {
+    margin-left: 8px;
+}
+
+/* Style for the dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #fff;
+    min-width: 180px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 10px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Style for the dropdown menu items */
+.dropdown-menu li {
+    list-style: none;
+}
+
+/* Style for the dropdown menu links */
+.dropdown-menu li a {
+    color: #333;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 14px;
+}
+
+/* Hover effect for the dropdown menu links */
+.dropdown-menu li a:hover {
+    background-color: #f1f1f1;
+    color: #007bff;
+}
+
+/* Show the dropdown menu with animation when hovering over the dropdown container */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* CSS cho input */
+#search {
+    padding: 8px; /* Khoảng cách giữa nội dung và biên của input */
+    border: 1px solid #ccc; /* Đường viền của input */
+    border-radius: 4px; /* Độ cong của góc */
+    font-size: 14px; /* Cỡ chữ */
+}
+
+/* CSS cho button */
+#search button {
+    padding: 8px 12px; /* Khoảng cách giữa nội dung và biên của button */
+    background-color: #007bff; /* Màu nền */
+    color: white; /* Màu chữ */
+    border: none; /* Loại bỏ đường viền */
+    border-radius: 4px; /* Độ cong của góc */
+    cursor: pointer; /* Con trỏ khi di chuột qua */
+    font-size: 14px; /* Cỡ chữ */
+}
+
+/* CSS khi hover vào button */
+#search button:hover {
+    background-color: #0056b3; /* Màu nền khi hover */
+}

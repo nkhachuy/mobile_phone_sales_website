@@ -1,0 +1,184 @@
+/* CSS cho header */
+header {
+    background-color: #f8f9fa; /* Màu nền nhạt */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #dee2e6; /* Đường viền dưới */
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* CSS cho menu */
+nav .header_top {
+    background-color: #343a40; /* Màu nền đen */
+    padding: 10px 0;
+}
+
+nav .header_top ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav .header_top ul li {
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+
+nav .header_top ul li a {
+    color: #fff; /* Màu chữ trắng */
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav .header_top ul li a:hover {
+    background-color: #495057;
+}
+
+nav .header_top ul li a i {
+    margin-right: 5px;
+}
+
+nav .header_top ul li input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+nav .header_top ul li button {
+    background-color: #ffc107; /* Màu nền vàng */
+    color: #343a40; /* Màu chữ đen */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav .header_top ul li button:hover {
+    background-color: #e0a800;
+}
+
+/* CSS cho sub menu */
+nav .header_top ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #343a40;
+    padding: 10px 0;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+nav .header_top ul li:hover ul {
+    display: block;
+}
+
+nav .header_top ul li ul li {
+    display: block;
+    margin: 0;
+}
+
+nav .header_top ul li ul li a {
+    padding: 10px 15px;
+    white-space: nowrap;
+}
+
+nav .header_top ul li ul li a:hover {
+    background-color: #495057;
+}
+
+/* CSS cho menu-bar */
+.menu-bar {
+    background-color: #fff;
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.menu-bar .content_menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.menu-bar .content_menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-bar .content_menu ul li {
+    position: relative;
+    padding: 10px 15px;
+}
+
+.menu-bar .content_menu ul li a {
+    text-decoration: none;
+    color: #343a40; /* Màu chữ đen */
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-bar .content_menu ul li a:hover {
+    background-color: #f8f9fa;
+}
+
+.menu-bar .content_menu ul li a i {
+    margin-right: 5px;
+}
+
+.menu-bar .content_menu ul li:hover .sub_menu {
+    display: block;
+}
+
+.menu-bar .content_menu .sub_menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.menu-bar .content_menu .sub_menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-bar .content_menu .sub_menu ul li {
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+.menu-bar .content_menu .sub_menu ul li a {
+    color: #343a40; /* Màu chữ đen */
+}
+
+.menu-bar .content_menu .sub_menu ul li a:hover {
+    background-color: #f8f9fa;
+}

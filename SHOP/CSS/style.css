@@ -1,0 +1,861 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    
+    background-color: #F3F3F3;
+}
+
+header {
+    background-color: #FFC602;
+    text-align: center;
+}
+
+header img {
+    width: 1280px;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+/* --------------------HEADER-TOP----------------------- */
+/* màu nền cho toàn thẻ nav */
+nav {
+
+    background-color: #FFD400;
+}
+
+.header_top {
+    position: relative !important;
+    max-width: 1300px !important;
+    margin: auto !important;
+    z-index: 999 !important;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    font-size: 12px;
+}
+
+.header_top ul {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+nav ul li,
+a {
+    font-size: 14px;
+}
+
+nav ul li:nth-child(2) {
+    position: relative;
+}
+
+nav ul li:nth-child(2) i {
+    position: absolute;
+    font-size: 15px;
+    right: -15px;
+    top: 10px;
+    color: #333;
+}
+
+nav ul li:nth-child(3) {
+    position: relative;
+}
+
+nav ul li:nth-child(3) input {
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 6px;
+    outline: none;
+
+}
+
+nav ul li:nth-child(3) i {
+    position: absolute;
+    font-size: 15px;
+    right: 10px;
+    color: #333;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+nav ul li:nth-child(4) button {
+    height: 30px;
+    padding: 0 8px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid rgb(70, 68, 68);
+    border-radius: 5px;
+}
+
+nav ul li:nth-child(4) button i {
+    margin-right: 6px;
+}
+
+nav ul li:nth-child(4) button:hover {
+    background-color: #FFBC06;
+}
+
+nav ul li:nth-child(5):hover a {
+    font-weight: bold;
+}
+
+/* Chỉnh cho đoạn văn bản được căn giữa */
+nav ul li:nth-child(5) a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+nav ul li:nth-child(6):hover a {
+    font-weight: bold;
+}
+
+nav ul li:nth-child(7):hover a {
+    font-weight: bold;
+}
+
+nav ul li:nth-child(7) a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+nav ul li:nth-child(8):hover a {
+    font-weight: bold;
+}
+
+nav ul li:nth-child(9):hover a {
+    font-weight: bold;
+}
+
+/* ----------XỬ LÝ NÚT NHÁY------------- */
+.btn_in {
+    display: block;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: red;
+    float: left;
+    margin-right: 8px;
+}
+
+.btn_out {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-color: red;
+    pointer-events: none;
+    /* GOI ANIMATION RA */
+    animation: btn_xl 1s linear infinite
+}
+
+/* -----------THIẾT LẬP ANIMATIONS----------- */
+@keyframes btn_xl {
+    from {
+        opacity: 0.2;
+    }
+
+    to {
+        transform: scale(2)
+    }
+}
+
+/* ------------------------MENU-BAR----------------- */
+.menu-bar {
+    background-color: #FFD400 !important;
+}
+
+.menu-bar ul {
+    max-width: 1300px !important;
+    margin: auto !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+.menu-bar ul li a {
+    color: black;
+    font-size: 14px;
+}
+
+.menu-bar ul li a i {
+    font-size: 15px !important;
+    margin-right: 5px !important;
+}
+
+.content_menu>ul>li {
+    padding: 12px 5px !important;
+    transition: all 0.3s ease !important;
+    width: 100% !important;
+    text-align: center !important;
+}
+
+/* HOVER */
+.menu-bar ul li:hover {
+    background-color: white !important;
+}
+
+/* -----------------------ADDRESS FORM-------------------- */
+.address_form {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: none;
+}
+
+.address_form_content {
+    width: 500px !important;
+    height: 500px !important;
+    border: 1px solid !important;
+    border-radius: 10px !important;
+    background-color: white !important;
+}
+
+.address_form_content form {
+    padding: 0 40px !important;
+}
+
+.address_form_content h2 {
+    padding: 12px 0 !important;
+    border-bottom: 1px solid #ddd !important;
+    position: relative !important;
+    font-size: 16px !important;
+}
+
+.address_form_content h2 span {
+    display: block !important;
+    position: absolute !important;
+    height: 30px !important;
+    padding: 0 6px !important;
+    border: 1px solid #ddd !important;
+    right: 12px !important;
+    cursor: pointer !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    line-height: 30px !important;
+    font-size: 14px !important;
+    border-radius: 5px !important;
+}
+
+
+.address_form_content form p {
+    font-size: 16px !important;
+    margin: 10px 0 !important;
+}
+
+.address_form_content form input,
+select {
+    height: 50px !important;
+    display: block !important;
+    width: 100% !important;
+    margin-top: 20px !important;
+    border-radius: 5px !important;
+    border: 1px solid #ddd !important;
+    padding: 6px !important;
+}
+
+.address_form_content form button {
+    height: 50px !important;
+    width: 100% !important;
+    margin-top: 30px !important;
+    color: white !important;
+    border-radius: 5px !important;
+    border: 1px solid #ddd !important;
+    background-color: #F97E0E !important;
+    cursor: pointer !important;
+}
+
+.address_form_content form button:hover {
+    font-weight: bold !important;
+}
+
+
+/* TẠO MENU SỔ XUỐNG KHI HOVER VÀO */
+.content_menu ul li {
+    position: relative !important;
+}
+
+.sub_menu {
+    position: absolute;
+    background-color: #ddd;
+    width: 200px;
+    height: auto;
+    left: 0;
+    top: 100%;
+    padding: 12px;
+    display: none;
+    text-align: left;
+    z-index: 1;
+}
+
+.sub_menu ul {
+    display: block;
+}
+
+.sub_menu ul li {
+    padding: 6px 0;
+    text-align: left;
+}
+
+.sub_menu ul li h3 {
+    font-size: 14px;
+}
+
+.content_menu ul li:hover .sub_menu {
+    display: block !important;
+}
+
+.sub_menu ul li:hover a {
+    font-weight: bold;
+}
+
+.sub_menu ul li:hover {
+    background: none;
+}
+
+/* ---------------------------------------XỬ LÝ KHUNG SLIDER---------------------------------- */
+.container_slider {
+    max-width: 1300px;
+    height: 350px;
+    margin: 20px auto;
+}
+
+.slider_content {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+/* ------------------------------------------LEFT-------------------------------------- */
+.slider_content_left {
+    width: 900px;
+    height: 350px;
+}
+
+.slider_content_left_top {
+    width: 900px;
+    height: 300px;
+    position: relative;
+}
+
+.slider_content_left_top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider_content_left_bottom {
+    width: 900px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-top: none;
+    height: 50px;
+}
+
+.slider_content_left_bottom li {
+    width: 25%;
+    text-align: center;
+    cursor: pointer;
+    padding: 6px 10px;
+    height: 100%;
+    line-height: 30px;
+    position: relative;
+    background-color: #ddd;
+
+}
+
+.slider_content_left_bottom li a {
+    color: #030303;
+}
+
+.slider_content_left_bottom li::before {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 70%;
+    width: 1px;
+    background-color: #c2c1c1;
+    right: 0;
+}
+
+.slider_content_left_bottom li.active {
+    border-top: 4px solid #FFD400;
+}
+
+/* -----------------------------------------RIGHT---------------------------------------- */
+.slider_content_right {
+    width: 50%;
+    /* Đảm bảo nội dung bên phải chiếm 50% chiều rộng của slider */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Căn đều các ô theo chiều ngang */
+    padding-left: 30px;
+    /* Khoảng cách với phần bên trái */
+}
+
+.img {
+    width: calc(50% - 5px);
+    /* Độ rộng của mỗi ô là 50% của slider_content_right trừ đi khoảng cách 5px */
+    height: 170px;
+    /* Chiều cao là 50% của slider_content_right */
+    /* Màu nền để kiểm tra */
+    margin-bottom: 10px;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* -----------------------------XU LY NEXT/PREVIOUS--------------- */
+.btn_chevron {
+    position: absolute;
+    width: 900px;
+    top: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn_chevron i {
+    color: #656363;
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    opacity: 0.8;
+
+}
+
+.container_left_top {
+    position: relative;
+    /*ẨN CÁC IMAGE TRONG SLIDER */
+    overflow: hidden;
+}
+
+.container_left_top:hover i {
+    opacity: 1;
+}
+
+/* .slider_content_left_top:hover .btn_chevron i{
+    opacity: 1;
+} */
+/* ---------------------------------------XỬ LÝ SLIDER---------------------------------- */
+.slider_content_left_top img {
+    position: absolute;
+    border-radius: 15px;
+}
+
+.slider_content_left_top a:nth-child(2) img {
+    transform: translateX(100%);
+}
+
+.slider_content_left_top a:nth-child(3) img {
+    transform: translateX(200%);
+}
+
+.slider_content_left_top a:nth-child(4) img {
+    transform: translateX(300%);
+}
+
+.slider_content_left_top {
+    transition: all 0.4s ease;
+}
+
+.slider_content_left_bottom li {
+    border-top: 4px solid #fff;
+}
+
+.slider_content_left_bottom li:hover {
+    font-weight: bold;
+}
+/* -----------------------------BANNER------------------------------ */
+.banner{
+    position: relative;
+}
+/* ----------------------------BANNER MID---------------------------- */
+.banner_mid {
+    width: 1300px;
+    height: 100px;
+    margin: auto;
+}
+
+.banner_mid img {
+    width: 1300px;
+    height: 100px;
+    border-radius: 15px;
+}
+
+/* --------------------------BANNER FLASH SALE--------------------------- */
+.flash_sale_banner {
+    width: 1300px;
+    height: 120px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.flash_sale_banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* -------------------------SLIDE PRODUCTS---------------------------------- */
+.container_items {
+    background-color: #FBB714;
+    padding: 10px;
+    width: 1300px;
+    margin: 0px auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.main_products {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 10px 10px;
+}
+
+.item_content {
+    width: 19%;
+    background-color: #fff;
+    padding: 5px 10px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.item_content>img {
+    width: 100%;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+/* ----------------HOVER------------------------ */
+.item_content:hover>img {
+    transform: translateY(-20px);
+}
+
+h3 {
+    color: #333333;
+    font-size: 14px;
+}
+
+.item_text li:hover h3 {
+    color: #64ABE1;
+}
+
+.item_text {
+    padding-top: 20px;
+}
+
+.item_text li {
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.item_text li:first-child {
+    height: 30px;
+    width: 70%;
+    background-color: #DE1C05;
+    margin-bottom: 20px;
+    align-items: center;
+    line-height: 30px;
+    border-radius: 40px;
+    margin-right: -10px;
+}
+
+.item_text li:first-child img {
+    width: 30px;
+    float: left;
+    border-radius: 100%;
+}
+
+.item_text li:first-child p {
+    color: #fff;
+    font-size: 12px;
+}
+
+.item_text li:last-child i {
+    color: #F97E0E;
+    font-size: 15px;
+}
+
+/* --------------------XU LY TEXT----------------- */
+.item_text li:nth-child(3) a {
+    font-size: 12px;
+    color: #030303;
+}
+
+.item_text li:nth-child(4) a {
+    color: #DE1C05;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.item_text li:nth-child(5) a {
+    font-size: 14px;
+    color: #807d7d;
+}
+
+.item_text li:nth-child(5) span {
+    color: #EB5757;
+    margin-left: 10px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #FFF0E9;
+    border-radius: 5px;
+}
+
+/* -------------------------------XU LY SLIDER MAIN ITEMS--------------------------- */
+.container_slider_main_products {
+    position: relative;
+    height: 500px;
+    transition: all 0.3s ease;
+}
+
+.container_main_products {
+    position: relative;
+    overflow: hidden;
+}
+
+.main_products {
+    position: absolute;
+}
+
+.btn_chevron_2 {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+    margin: 15% 10px;
+    top: 26%;
+}
+
+.btn_chevron_2 i {
+    width: 40px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    margin-right: 2%;
+    margin-left: -1%;
+    font-size: 26px;
+    opacity: 0.8;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.main_products:nth-child(2) {
+    transform: translateX(100%);
+}
+
+.main_products:nth-child(3) {
+    transform: translateX(200%);
+}
+
+/* TEST */
+.banner {
+    position: relative;
+}
+
+.main_content {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* -------------------------XU HƯỚNG MUA SẮM-------------------- */
+.container_buy_trend {
+    width: 1300px;
+    height: 320px;
+    background-color: #FCB69F;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.content_title {
+    color: #030303;
+    padding: 15px 22px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main_content_buy_trend {
+    position: relative;
+}
+
+.main_content_buy_trend>img {
+    width: 300px;
+    height: 240px;
+    padding-bottom: 10px;
+    margin:10px;
+}
+
+.content_text {
+    position: absolute;
+    top: 60%;
+    left: 40px;
+    padding: 15px;
+}
+
+.content_text h3 {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #030303;
+    font-style:inherit;
+}
+.content_text strong{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2F80ED;
+}
+.xu_huong_mua_sam{
+    display: flex;
+    margin-left: 10px;
+}
+/* ----------------------------------------DANH MỤC NỔI BẬT---------------------------- */
+.container_gallery{
+    width: 1300px;
+    height: 400px;
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+.title_gallery{
+    color: #030303;
+    padding: 25px 22px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}.contain_gallery {
+    display: grid;
+    grid-template-columns: repeat(10    , 1fr); /* Chia cột thành 5 phần bằng nhau */
+    gap: 10px;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.content_gallery {
+    text-align: center; /* căn giữa nội dung */
+}
+
+.content_gallery img {
+    width: 60px;
+    height: 60px;
+    display: block; /* Chuyển hình ảnh thành block để có thể căn giữa */
+    margin: 0 auto; /* Căn giữa hình ảnh */
+}
+
+.content_gallery span {
+    display: block; /* Chuyển chữ thành block để nó nằm dưới hình ảnh */
+    margin-top: 10px; /* Khoảng cách giữa hình ảnh và chữ */
+    margin-bottom: 40px;
+    font-size: 14px;
+}
+/* ------------------------BANNER DISCOUNT------------------ */
+.container_banner_sale{
+    width: 1300px;
+    height: auto;
+    margin: 10px auto;
+}
+.container_banner_sale strong{
+    font-size: 22px;
+    margin-bottom: 100px;
+    color: #333333;
+}
+.container_banner_sale img{
+    width: 1300px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+/* ------------------------DICH VU TIEN ICH----------------- */
+.container_service{
+    width: 1300px;
+    height: 300px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.content_service p{
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px 22px;
+    color: #333333;
+    line-height: 36px;
+    margin: 20px 20px;
+ }
+ .content_service ul{
+    width: auto;
+    height: 200px;
+    display: flex;
+ }
+ .content_service ul li{
+    width: 300px;
+    height: 180px;
+    background-color: #030303;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+ }
+/* -----------------------------NOI DUNG DICH VU------------------------- */
+.content_service_text{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+/*-------------------------------------------------------------------------------*/
